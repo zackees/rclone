@@ -2,6 +2,8 @@ module github.com/rclone/rclone
 
 go 1.19
 
+// replace github.com/diskfs/go-diskfs => /home/ncw/go/src/github.com/diskfs/go-diskfs
+
 require (
 	bazil.org/fuse v0.0.0-20230120002735-62a210ff1fd5
 	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.8.0
@@ -38,7 +40,7 @@ require (
 	github.com/jlaffaye/ftp v0.2.0
 	github.com/josephspurrier/goversioninfo v1.4.0
 	github.com/jzelinskie/whirlpool v0.0.0-20201016144138-0675e54bb004
-	github.com/klauspost/compress v1.17.2
+	github.com/klauspost/compress v1.17.4
 	github.com/koofr/go-httpclient v0.0.0-20230225102643-5d51a2e9dea6
 	github.com/koofr/go-koofrclient v0.0.0-20221207135200-cbd7fc9ad6a6
 	github.com/mattn/go-colorable v0.1.13
@@ -47,6 +49,7 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/moby/sys/mountinfo v0.6.2
 	github.com/ncw/go-acd v0.0.0-20201019170801-fe55f33415b1
+	github.com/ncw/go-diskfs v1.4.1-0.20231223121205-c8a9a133379e
 	github.com/ncw/swift/v2 v2.0.2
 	github.com/oracle/oci-go-sdk/v65 v65.51.0
 	github.com/patrickmn/go-cache v2.1.0+incompatible
@@ -57,7 +60,7 @@ require (
 	github.com/rfjakob/eme v1.1.2
 	github.com/rivo/uniseg v0.4.4
 	github.com/shirou/gopsutil/v3 v3.23.9
-	github.com/sirupsen/logrus v1.9.3
+	github.com/sirupsen/logrus v1.9.4-0.20230606125235-dd1b4c2e81af
 	github.com/skratchdot/open-golang v0.0.0-20200116055534-eef842397966
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/pflag v1.0.5
@@ -147,6 +150,7 @@ require (
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/pengsrc/go-shared v0.2.1-0.20190131101655-1999055a4a14 // indirect
+	github.com/pierrec/lz4/v4 v4.1.18 // indirect
 	github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/power-devops/perfstat v0.0.0-20221212215047-62379fc7944b // indirect
@@ -164,6 +168,7 @@ require (
 	github.com/spacemonkeygo/monkit/v3 v3.0.22 // indirect
 	github.com/tklauser/go-sysconf v0.3.12 // indirect
 	github.com/tklauser/numcpus v0.6.1 // indirect
+	github.com/ulikunitz/xz v0.5.11 // indirect
 	github.com/vivint/infectious v0.0.0-20200605153912-25a574ae18a3 // indirect
 	github.com/willscott/go-nfs-client v0.0.0-20200605172546-271fa9065b33 // indirect
 	github.com/yusufpapurcu/wmi v1.2.3 // indirect
