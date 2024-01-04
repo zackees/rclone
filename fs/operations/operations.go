@@ -334,7 +334,7 @@ func SameObject(src, dst fs.Object) bool {
 // be nil.
 func Move(ctx context.Context, fdst fs.Fs, dst fs.Object, remote string, src fs.Object) (newDst fs.Object, err error) {
 	ci := fs.GetConfig(ctx)
-	tr := accounting.Stats(ctx).NewCheckingTransfer(src, "moving")
+	tr := accounting.Stats(ctx).NewTransfer(src)
 	defer func() {
 		if err == nil {
 			accounting.Stats(ctx).Renames(1)
