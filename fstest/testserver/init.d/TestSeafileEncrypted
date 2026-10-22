@@ -23,7 +23,7 @@ mkdir -p ${SEAFILE_TEST_DATA}/${NAME}
 COMPOSE_DIR=$(dirname "$0")/seafile
 
 start() {
-    docker-compose --project-directory ${COMPOSE_DIR} --project-name ${NAME} --file ${COMPOSE_DIR}/docker-compose.yml up -d
+    docker-compose --project-directory ${COMPOSE_DIR} --project-name ${NAME} --file ${COMPOSE_DIR}/docker-compose.yml up --build -d
 
     # it takes some time for the database to be created
     sleep 60
