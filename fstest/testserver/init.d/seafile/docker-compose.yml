@@ -13,7 +13,11 @@ services:
     entrypoint: memcached -m 256
 
   seafile:
-    image: seafileltd/seafile-mc:${SEAFILE_VERSION}
+    image: rclone-seafile-test:${SEAFILE_VERSION}
+    build:
+      context: .
+      args:
+        SEAFILE_VERSION: ${SEAFILE_VERSION}
     ports:
       - "${SEAFILE_IP}:${SEAFILE_PORT}:80"
     volumes:
